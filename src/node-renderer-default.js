@@ -94,7 +94,9 @@ class NodeRendererDefault extends Component {
                     treeIndex,
                   })
                 }
-              />
+              >
+		{node.expanded ? "-" : "+"}
+		</button>
 
               {node.expanded &&
                 !isDragging && (
